@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/** Variables **/
+
+:root{
+    --body-background: #fcfcfc;
+    --h2--font-size: 1.5em;
+}
+
+/** Reseteo */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/** Body */
+/* 
+.scale-cv .container{
+    max-width: 595px;
+}
+
+.scale-cv .container .section{
+    padding: 1.5rem 0 .80rem;
+} */
+
+
+
+body{
+    background-color: #2a7da2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/** Main */
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0px 10px 0px;
+}
+
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 30px;
+}
+
+.container .left_side .fa-solid{
+    margin: 5px;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-text .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.contact-info{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.80rem;
+}
+
+.contact-info ul{
+    position: relative;
+}
+
+.contact-info ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contact-info ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-info ul li span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info.education li{
+    margin-bottom: 15px;
+}
+
+.contact-info.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+
+}
+
+.contact-info.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-info.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year-company{
+    min-width: 150px;
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.about .box .year-company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+
+.skills ul{
+    position: relative;
+    margin: 0 20px;
+}
+
+.skills ul li{
+    position: relative;
+    margin: 10px 0;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa-solid{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 40px;
+}
+
+
+
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year-company{
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+/* .scale-cv h2{
+    font-size: 1rem;
+}
+
+.scale-cv h3{
+    font-size: .975rem;
+}
+.scale-cv li{
+    font-size: .913rem;
+}
+
+.scale-cv .contact-info .text{
+    font-size: .813rem;
+}
+
+.scale-cv{
+    margin: 10px 0 0 0;
+    max-width: 695px;
+    height: 1110px;
+}
+
+.scale-cv .left_side .profile-text .img{
+    width: 175px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.scale-cv .left_side{
+    padding: 0 1rem;
+}
+
+.scale-cv .left_side .fa-download{
+    display: none;
+} */
+
