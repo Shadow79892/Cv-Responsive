@@ -18,17 +18,6 @@
 }
 
 /** Body */
-/* 
-.scale-cv .container{
-    max-width: 595px;
-}
-
-.scale-cv .container .section{
-    padding: 1.5rem 0 .80rem;
-} */
-
-
-
 body{
     background-color: #2a7da2;
     display: flex;
@@ -161,6 +150,21 @@ body{
     font-weight: 300;
 }
 
+.contact-info.reference h4{
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact-info.reference h5{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-info.reference h6{
+    color: #fff;
+    font-weight: 300;
+}
+
 .container .right_side{
     position: relative;
     background: #fff;
@@ -214,6 +218,32 @@ p{
     font-size: 16px;
 }
 
+.right_side .certificaciones a{
+    text-decoration: none;
+    color: #000;
+}
+
+.right_side .certificaciones a i{
+    color:#03a9f4 ;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.skills ul li .icon{
+    display: inline-flex;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills div{
+    width: 50%;
+}
 
 .skills ul{
     position: relative;
@@ -268,18 +298,55 @@ p{
     .interest ul{
         grid-template-columns: repeat(1,1fr);
     }
+    .skills{
+        flex-direction: column;
+    }
+    .skills div{
+        width: 100%;
+    }
 }
 
+/** Scale CV */
 
-/* .scale-cv h2{
-    font-size: 1rem;
+
+.scale-cv h2{
+    font-size: .965rem;
+}
+
+.scale-cv .about .box h4{
+    font-size: 12px;
+}
+
+.scale-cv .left_side .reference{
+    padding-top: 20px;
+}
+
+.scale-cv p{
+    font-size: .713rem;
+}
+
+.scale-cv a{
+    font-size: .813rem;
+}
+
+.scale-cv .certificaciones{
+    margin-bottom: 25px;
+}
+
+.scale-cv .objectives{
+    margin-bottom: 25px;
 }
 
 .scale-cv h3{
     font-size: .975rem;
 }
-.scale-cv li{
-    font-size: .913rem;
+.scale-cv .right_side .experience{
+    margin-bottom: 25px;
+}
+
+
+.scale-cv .right_side ul li{
+    font-size: .713rem;
 }
 
 .scale-cv .contact-info .text{
@@ -289,7 +356,7 @@ p{
 .scale-cv{
     margin: 10px 0 0 0;
     max-width: 695px;
-    height: 1110px;
+    min-height: 1110px;
 }
 
 .scale-cv .left_side .profile-text .img{
@@ -302,7 +369,11 @@ p{
     padding: 0 1rem;
 }
 
+.scale-cv .right_side{
+    padding: 20px;
+}
+
 .scale-cv .left_side .fa-download{
     display: none;
-} */
+}
 
