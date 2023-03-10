@@ -233,12 +233,9 @@ p{
 }
 
 .skills ul li .icon{
-    display: inline-flex;
-    width: 30px;
+    width: 20px;
     font-size: 18px;
     color: #03a9f4;
-    justify-content: center;
-    align-items: center;
 }
 
 .skills div{
@@ -308,7 +305,6 @@ p{
 
 /** Scale CV */
 
-
 .scale-cv h2{
     font-size: .965rem;
 }
@@ -344,6 +340,22 @@ p{
     margin-bottom: 25px;
 }
 
+.scale-cv .right_side .skills{
+    margin-bottom: 25px;
+}
+
+.scale-cv .right_side .skills li{
+    list-style: none;
+    margin: 10px;
+}
+
+.scale-cv .left_side .language{
+    padding-top: 20px;
+}
+
+.scale-cv .contact-info .education{
+    padding-top: 20px;
+}
 
 .scale-cv .right_side ul li{
     font-size: .713rem;
@@ -354,7 +366,7 @@ p{
 }
 
 .scale-cv{
-    margin: 10px 0 0 0;
+    margin: 2px;
     max-width: 695px;
     min-height: 1110px;
 }
