@@ -245,6 +245,7 @@ p{
 .skills ul{
     position: relative;
     margin: 0 20px;
+    list-style: none;
 }
 
 .skills ul li{
@@ -252,6 +253,8 @@ p{
     margin: 10px 0;
     color: #848c99;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .interest ul{
@@ -341,12 +344,12 @@ p{
 }
 
 .scale-cv .right_side .skills{
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .scale-cv .right_side .skills li{
     list-style: none;
-    margin: 10px;
+    margin: 8px;
 }
 
 .scale-cv .left_side .language{
@@ -366,8 +369,8 @@ p{
 }
 
 .scale-cv{
-    margin: 2px;
-    max-width: 695px;
+    margin: 2px 0 0 2px;
+    max-width: 700px;
     min-height: 1110px;
 }
 
